@@ -1,0 +1,76 @@
+apiVersion: v1
+entries:
+  bioos:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2023-05-24T03:51:11.35761144Z"
+    description: BioOS UI 前端
+    digest: b0e4e9b4b8f935819a31088e26d5dc8704d51a5ebb41f4531dd8ba56e381bcc3
+    name: bioos
+    type: application
+    urls:
+    - https://github.com/markthink/helm-charts/releases/download/bioos-0.1.0/bioos-0.1.0.tgz
+    version: 0.1.0
+  cromwell:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-05-24T03:51:11.486465752Z"
+    description: A Helm chart for cromwell with local backend
+    digest: bf1710cdedfa5f47ccb0892c07652365a6840eec2cb371ee994941fb552e8e42
+    keywords:
+    - cromwell
+    - wes
+    - workflow
+    - wdl
+    name: cromwell
+    type: application
+    urls:
+    - https://github.com/markthink/helm-charts/releases/download/cromwell-0.1.0/cromwell-0.1.0.tgz
+    version: 0.1.0
+  jupyterhub:
+  - annotations:
+      artifacthub.io/images: |
+        - image: jupyterhub/configurable-http-proxy:4.5.3
+          name: configurable-http-proxy
+        - image: jupyterhub/k8s-hub:2.0.0
+          name: k8s-hub
+        - image: jupyterhub/k8s-image-awaiter:2.0.0
+          name: k8s-image-awaiter
+        - image: jupyterhub/k8s-network-tools:2.0.0
+          name: k8s-network-tools
+        - image: jupyterhub/k8s-secret-sync:2.0.0
+          name: k8s-secret-sync
+        - image: jupyterhub/k8s-singleuser-sample:2.0.0
+          name: k8s-singleuser-sample
+        - image: k8s.gcr.io/kube-scheduler:v1.23.10
+          name: kube-scheduler
+        - image: k8s.gcr.io/pause:3.8
+          name: pause
+        - image: k8s.gcr.io/pause:3.8
+          name: pause
+        - image: traefik:v2.8.4
+          name: traefik
+    apiVersion: v2
+    appVersion: 3.0.0
+    created: "2023-05-24T03:51:11.617796285Z"
+    description: Multi-user Jupyter installation
+    digest: 45f7bf2b08f5635363c722997fc77e53603430f223c24d5030012d6d44cbfb4a
+    home: https://z2jh.jupyter.org
+    icon: https://jupyterhub.github.io/helm-chart/images/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.20.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://github.com/markthink/helm-charts/releases/download/jupyterhub-2.0.0/jupyterhub-2.0.0.tgz
+    version: 2.0.0
+generated: "2023-05-24T03:51:11.617830585Z"
