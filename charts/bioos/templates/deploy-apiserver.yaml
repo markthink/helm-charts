@@ -33,7 +33,7 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           env:
           - name: LANG
-            value: C.UTF_8
+            value: zh_CN.UTF-8
           - name: MYSQL_HOST
             value: {{ .Values.mysql.hostname }}
           - name: MYSQL_USERNAME
