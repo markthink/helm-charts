@@ -29,7 +29,7 @@ spec:
   csi:
     driver: nfs.csi.k8s.io
     volumeAttributes:
-      mountPermissions: 0777
+      mountPermissions: "0777"
       csi.storage.k8s.io/pv/name: bioos-storage
       csi.storage.k8s.io/pvc/name: bioos-storage-pvc
       server: 192.168.46.255
